@@ -41,11 +41,11 @@ composeMaterial3 = "1.4.0"
 ksp = "2.3.11"
 
 # Images
-coil = "3.6.0"
+coil = "3.6.2"
 
 # Developer Tools
 ktfmt = "0.64"
-spotless = "8.10.1"
+spotless = "8.10.2"
 jdkDesugar = "2.1.5"
 caupain = "1.10.1"
 detekt = "2.0.0-alpha.6"
