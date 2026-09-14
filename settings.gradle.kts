@@ -17,58 +17,64 @@ import org.gradle.kotlin.dsl.withType
  */
 
 pluginManagement {
-    repositories {
-        mavenLocal()
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-        maven {
-            setUrl("https://jitpack.io")
-            content {
-                includeGroup("com.github.pyamsoft.cachify")
-                includeGroup("com.github.pyamsoft.pydroid")
-                includeGroup("com.github.pyamsoft")
-            }
-        }
+  repositories {
+    maven {
+      url = uri(rootProject.projectDir.resolve("local-repo"))
     }
+    mavenLocal()
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+    maven {
+      setUrl("https://jitpack.io")
+      content {
+        includeGroup("com.github.pyamsoft.cachify")
+        includeGroup("com.github.pyamsoft.pydroid")
+        includeGroup("com.github.pyamsoft")
+      }
+    }
+  }
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        mavenLocal()
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-        // Jitpack
-        maven {
-            setUrl("https://jitpack.io")
-            content {
-                includeGroup("com.github.pyamsoft.cachify")
-                includeGroup("com.github.pyamsoft.pydroid")
-                includeGroup("com.github.pyamsoft")
-            }
-        }
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    maven {
+      url = uri("local-repo")
     }
+    mavenLocal()
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+    // Jitpack
+    maven {
+      setUrl("https://jitpack.io")
+      content {
+        includeGroup("com.github.pyamsoft.cachify")
+        includeGroup("com.github.pyamsoft.pydroid")
+        includeGroup("com.github.pyamsoft")
+      }
+    }
+  }
 }
 
 gradle.lifecycle.beforeProject {
-    tasks.withType<JavaCompile>().configureEach {
-        options.compilerArgs.add("-Xlint:unchecked")
-        options.compilerArgs.add("-Xlint:deprecation")
-        options.isDeprecation = true
-        options.isFork = true
-    }
-    tasks.withType<Test>().configureEach {
-        maxParallelForks = Runtime.getRuntime().availableProcessors() / 2
-        reports.html.required.set(false)
-        reports.junitXml.required.set(false)
-        maxHeapSize = "4g"
-    }
+  tasks.withType<JavaCompile>().configureEach {
+    options.compilerArgs.add("-Xlint:unchecked")
+    options.compilerArgs.add("-Xlint:deprecation")
+    options.isDeprecation = true
+    options.isFork = true
+  }
+  tasks.withType<Test>().configureEach {
+    maxParallelForks = Runtime.getRuntime().availableProcessors() / 2
+    reports.html.required.set(false)
+    reports.junitXml.required.set(false)
+    maxHeapSize = "4g"
+  }
 }
 
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0" apply true
+  id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0" apply true
 }
 
 rootProject.name = "TetherFuseNet"
