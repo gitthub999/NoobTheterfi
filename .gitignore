@@ -22,3 +22,6 @@ package.json
 keystore
 *-keystore
 *.keystore
+
+!local-repo/
+!local-repo/**
