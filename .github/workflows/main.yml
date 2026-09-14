@@ -19,7 +19,15 @@ jobs:
       - name: Create local.properties
         run: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
 
-      - name: Build APK
+      - name: Build pydroid 30.0.0 to mavenLocal
+        run: |
+          git clone https://github.com/pyamsoft/pydroid.git /tmp/pydroid
+          cd /tmp/pydroid
+          git checkout 30.0.0 || git checkout main
+          chmod +x gradlew
+          ./gradlew publishToMavenLocal --no-configuration-cache -Dorg.gradle.parallel=false
+
+      - name: Build TetherFi APK
         run: |
           chmod +x gradlew
           ./gradlew assembleFdroidDebug --no-configuration-cache
