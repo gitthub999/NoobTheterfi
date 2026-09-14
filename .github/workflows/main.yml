@@ -1,43 +1,46 @@
-name: 1ST TIME - BUILD AND VENDOR + APK
-on: workflow_dispatch
+name: Build APK
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
         with:
-          distribution: temurin
-          java-version: 21
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Create local.properties
+        run: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
 
-      - name: 1. Vendor pydroid to local-repo
+      - name: Build pydroid 30.0.0 to mavenLocal + local-repo
         run: |
-          git clone https://github.com/pyamsoft/pydroid.git pydroid-30.0.0
-          cd pydroid-30.0.0
-          git checkout tags/30.0.0
+          git clone --no-checkout --filter=blob:none https://github.com/pyamsoft/pydroid.git /tmp/pydroid
+          cd /tmp/pydroid
+          git fetch --tags --depth 1 origin
+          git checkout 30.0.0 || git checkout v30.0.0 || git checkout main
           chmod +x gradlew
+          ./gradlew publishToMavenLocal --no-configuration-cache -Dorg.gradle.parallel=false
           ./gradlew publish -PpublishUrl=file://${{ github.workspace }}/local-repo --no-configuration-cache -Dorg.gradle.parallel=false
-          cd ..
-          rm -rf pydroid-30.0.0 .gradle
-          ls -lh local-repo/com/pyamsoft/pydroid/ | head -20
 
-      - name: 2. Build APK
+      - name: Build TetherFi APK
         run: |
           chmod +x gradlew
           ./gradlew assembleFdroidDebug --no-configuration-cache
 
-      - name: 3. Upload Artifacts
+      - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TTT-APK
+          name: TetherFuseNet-APK
           path: app/build/outputs/apk/fdroid/debug/*.apk
 
-      - name: 4. Upload local-repo + APK to GitHub
+      - name: Upload local-repo to GitHub repo
         run: |
           git config user.name "bot"
           git config user.email "bot@bot.com"
-          git rm -r --cached local-repo || true
           git add -f local-repo/
-          git add -f app/build/outputs/apk/fdroid/debug/*.apk
-          git commit -m "local-repo + apk uploaded for offline" || echo "nothing"
+          git add -f app/build/outputs/apk/fdroid/debug/*.apk || true
+          git commit -m "vendor local-repo + apk for offline" || echo "nothing"
           git push
