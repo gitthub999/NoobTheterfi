@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "theme",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "core",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "theme-30.0.0.aar",
+          "url": "theme-30.0.0.aar",
+          "size": 9778,
+          "sha512": "276678dfe66cabf16d12f146e6a96c9559725a14ca553d94fa715d95efa5c0c1eb9fb5dbd0f909aaa3757b564e7191de667c376d2098d5bd7962e7e02eeb58ed",
+          "sha256": "6bfce0c39fe56347d887bf843c45507abf55a7fd46eda3f65f8c15827d1e28cc",
+          "sha1": "0742196df68ac7c75c64777279e5edf9f58f844e",
+          "md5": "40f28c858f5607954f4c987cf7e025d3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "core",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "theme-30.0.0.aar",
+          "url": "theme-30.0.0.aar",
+          "size": 9778,
+          "sha512": "276678dfe66cabf16d12f146e6a96c9559725a14ca553d94fa715d95efa5c0c1eb9fb5dbd0f909aaa3757b564e7191de667c376d2098d5bd7962e7e02eeb58ed",
+          "sha256": "6bfce0c39fe56347d887bf843c45507abf55a7fd46eda3f65f8c15827d1e28cc",
+          "sha1": "0742196df68ac7c75c64777279e5edf9f58f844e",
+          "md5": "40f28c858f5607954f4c987cf7e025d3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "theme-30.0.0-sources.jar",
+          "url": "theme-30.0.0-sources.jar",
+          "size": 3856,
+          "sha512": "81c3b9c1da96266cf06ff1029c4eac2761d36c59664c40b02ae9de467cba07bd7eef9b564817b18ed11e9140af070ccd2a398d61440bc5edba682ad195d45563",
+          "sha256": "82acd17cf6eb21976ca6abf77ec7eb15b97c0eb53c35c700b32991d634cdd40d",
+          "sha1": "68462a54693d0f920672527f873e9f1b124d0264",
+          "md5": "55ff607f52c1eb2d786e557409675ed1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "theme-30.0.0-javadoc.jar",
+          "url": "theme-30.0.0-javadoc.jar",
+          "size": 420216,
+          "sha512": "00447e16a25167bb7a0334424bc0e59728432d96a2a2bdb2a8d832c05f25150c3b86617c398361dc083ccbb6177b6b79f07e8efb7ad86c7001a18b80fa6ae0f5",
+          "sha256": "e04ed32b7933782e5b4fe5ad9bef1a008333da40d889cc202216ae0e8f021059",
+          "sha1": "12293d9750d700af13ec907f3eadb5f1f5832188",
+          "md5": "8a1c410ddbf7a8794d6f8bc0dcb1f14c"
+        }
+      ]
+    }
+  ]
+}

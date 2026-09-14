@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "bootstrap",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bootstrap-30.0.0.aar",
+          "url": "bootstrap-30.0.0.aar",
+          "size": 80576,
+          "sha512": "23f24b7b1e9a97fd555645d72616c869b64720a7231eef4f02a5e7397f50918d8e91f5c8aa449e6bd3febb68cb7382fb2cb1dffda204043e55ba89297f52abda",
+          "sha256": "056b40411c1b66c9eccccec762ebeb5aacb6ed3369332b75640763079f89011c",
+          "sha1": "c83e3e9dbacc89deadd26561699ae1ec693c12d4",
+          "md5": "a7ffff38f0ac29e62023e94295dcb6ec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime-annotation",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bootstrap-30.0.0.aar",
+          "url": "bootstrap-30.0.0.aar",
+          "size": 80576,
+          "sha512": "23f24b7b1e9a97fd555645d72616c869b64720a7231eef4f02a5e7397f50918d8e91f5c8aa449e6bd3febb68cb7382fb2cb1dffda204043e55ba89297f52abda",
+          "sha256": "056b40411c1b66c9eccccec762ebeb5aacb6ed3369332b75640763079f89011c",
+          "sha1": "c83e3e9dbacc89deadd26561699ae1ec693c12d4",
+          "md5": "a7ffff38f0ac29e62023e94295dcb6ec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bootstrap-30.0.0-sources.jar",
+          "url": "bootstrap-30.0.0-sources.jar",
+          "size": 33521,
+          "sha512": "570e6a3d5e5bca1fe85e688f42f3f1189b9c1dd111e79ac781638c9be0fa9a2701d0feefa1d2f90462f13ed3bd77ea0a4be929d952fdcbd62b6a0eca8d0c3a6c",
+          "sha256": "c642ca3f231b7796f9d3405f5f8b1b8aae1f7a72c394a3309e656c3c78ccaf20",
+          "sha1": "e858e82e18ae149b6edd357faef4ed1e962efcf9",
+          "md5": "e56e7a95bf1d88a99a1c0bfb5c361610"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bootstrap-30.0.0-javadoc.jar",
+          "url": "bootstrap-30.0.0-javadoc.jar",
+          "size": 573943,
+          "sha512": "58a103c592c5240468d20a28deb35ea9270b1315ce0897d26f702720ce2d4fed7848bda72a0776a7c66827cb8f7723946fc54d19096926053254070bbf6d0efb",
+          "sha256": "f53fb9c6db1ce72831d858d3947fbb055c660fe77f3e6753df3267397b034316",
+          "sha1": "5f9a00f59da4216af912e765d9b5a46ad6422eaf",
+          "md5": "9f68dc94cbd3e3d0c34c0aae7990837b"
+        }
+      ]
+    }
+  ]
+}

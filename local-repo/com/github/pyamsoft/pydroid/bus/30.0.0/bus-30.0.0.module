@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "bus",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "core",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bus-30.0.0.aar",
+          "url": "bus-30.0.0.aar",
+          "size": 7300,
+          "sha512": "18c21ac1465ebebdc75db0f643d82666908abba2acf5fd446f94118983ae20b30565e6175cb1059b269fd3eb76864742086f1bf90ef95db20b5b782c7e9fc8d0",
+          "sha256": "0ee946d4941901b7271bae4f3adb11f4209502ee1b10c9b33158d55469246850",
+          "sha1": "f2ce32f4606b04c8f9065a717a426f99825a3326",
+          "md5": "e0bb9b4418d06eb056c9ee654fb18c9c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "core",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bus-30.0.0.aar",
+          "url": "bus-30.0.0.aar",
+          "size": 7300,
+          "sha512": "18c21ac1465ebebdc75db0f643d82666908abba2acf5fd446f94118983ae20b30565e6175cb1059b269fd3eb76864742086f1bf90ef95db20b5b782c7e9fc8d0",
+          "sha256": "0ee946d4941901b7271bae4f3adb11f4209502ee1b10c9b33158d55469246850",
+          "sha1": "f2ce32f4606b04c8f9065a717a426f99825a3326",
+          "md5": "e0bb9b4418d06eb056c9ee654fb18c9c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bus-30.0.0-sources.jar",
+          "url": "bus-30.0.0-sources.jar",
+          "size": 3343,
+          "sha512": "aed5aba8eed59780504bf2217e303aae3a53b59bbb3fce6b333b463e03854624bb1d64ba6bb964543caa8cb1e27de686d2f206f6daf9c89581d312babe0e4ef5",
+          "sha256": "aa7aa60e4b54fb141dfcf5153bd0ea6f9277ea09bdd3ecaf6f850907d54156eb",
+          "sha1": "915f9f1425db37204699139226559fb8c3228f09",
+          "md5": "bf3149c50f7c9fce7369376a0a6e54b5"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bus-30.0.0-javadoc.jar",
+          "url": "bus-30.0.0-javadoc.jar",
+          "size": 414640,
+          "sha512": "dc578b194103db3b402a55f3aa3223c348d934814b52deda08f76a5c987417538eccf6662870e7dc028e400380be744b6ebc8b45a28709fa6d34d421b78424bd",
+          "sha256": "e0d9cb199caec42fd150dbbd6a926862b0edd1a589759ba4dee8d3bcfd40b100",
+          "sha1": "5d2e4f542714719e387ba1655064c5539c790aa9",
+          "md5": "2d9d5e48c52c8757e149786ebe7586ca"
+        }
+      ]
+    }
+  ]
+}

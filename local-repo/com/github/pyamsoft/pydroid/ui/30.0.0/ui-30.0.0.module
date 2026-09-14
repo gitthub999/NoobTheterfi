@@ -1,0 +1,256 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "ui",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "arch",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "billing",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "bootstrap",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "theme",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ui-30.0.0.aar",
+          "url": "ui-30.0.0.aar",
+          "size": 1130360,
+          "sha512": "c1ab3fd0ce9c1119467d6284dd69df618a06324d6bcd4f59ad7945e156fee5417a9966bf78dc15debefb613166013994e6c67691e5d89ab2e965dae88de67eba",
+          "sha256": "e6a943bbb5ca3fe215c05b141181c9526eb3280575be3ed85fac3beee495f194",
+          "sha1": "524d7720f4acf0fd4888d1aac25b676242d14c4d",
+          "md5": "a649fe1d0a5849b40aa8ce94a27bb7af"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.datastore",
+          "module": "datastore-preferences",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "androidx.preference",
+          "module": "preference",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.compose.animation",
+          "module": "animation",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose-core",
+          "version": {
+            "requires": "3.6.2"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.19.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "arch",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "billing",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "bootstrap",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "theme",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ui-30.0.0.aar",
+          "url": "ui-30.0.0.aar",
+          "size": 1130360,
+          "sha512": "c1ab3fd0ce9c1119467d6284dd69df618a06324d6bcd4f59ad7945e156fee5417a9966bf78dc15debefb613166013994e6c67691e5d89ab2e965dae88de67eba",
+          "sha256": "e6a943bbb5ca3fe215c05b141181c9526eb3280575be3ed85fac3beee495f194",
+          "sha1": "524d7720f4acf0fd4888d1aac25b676242d14c4d",
+          "md5": "a649fe1d0a5849b40aa8ce94a27bb7af"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ui-30.0.0-sources.jar",
+          "url": "ui-30.0.0-sources.jar",
+          "size": 194079,
+          "sha512": "ebae755b6c9f59fff4d6226f202e4f5fc51e31cec9754b661460d51327baf67439c83a9ea196bf330269be0052232a853bd258b9667db1503289e77a6586d02a",
+          "sha256": "e072f8bc20e862381b39079ed09fec7b921a1ff9f59e4802e28bf80a0e53c504",
+          "sha1": "2605df7d892b1fdb62e030cbcffe165e9896290c",
+          "md5": "50de63b250696cc4a0f60abe7870e34e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ui-30.0.0-javadoc.jar",
+          "url": "ui-30.0.0-javadoc.jar",
+          "size": 663640,
+          "sha512": "da830e8b1c33b014b6f5e0da3d6695d80629bc93aca90d0933312ee24b67ce4beee045439168285a193d30de25fe38f3e0ba303d83db597c840133edce407b9c",
+          "sha256": "73c4c1ad6821bcc8fb4e1d8f66336f87e4af7941b528e4e3beb7cd8be149d99d",
+          "sha1": "b90404fc9ce819362f74f49e7d81f9a9846a5cdb",
+          "md5": "d4c8a17069b358b05cdb1f0d3b4ae3e3"
+        }
+      ]
+    }
+  ]
+}

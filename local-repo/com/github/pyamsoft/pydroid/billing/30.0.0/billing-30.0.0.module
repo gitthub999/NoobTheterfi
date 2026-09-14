@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "billing",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "bus",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "billing-30.0.0.aar",
+          "url": "billing-30.0.0.aar",
+          "size": 47168,
+          "sha512": "dedeec417b7b274e423e9cb933b3ce25085fd8b66139fd52416bcd2f37428f231e25c77f5740a4f52166d3cf6eb744930aa7546a296d8347133c096bcde875e9",
+          "sha256": "94d094a752a31b6e1bada760ca3714b0cf44cb85f44f6a722d5f43923cf942bc",
+          "sha1": "46a5c755576451cf22a84f9418f833f7bdd88d92",
+          "md5": "972c3a6b1e048ac7cd36ae168ef0eac1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime-annotation",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "bus",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "util",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "billing-30.0.0.aar",
+          "url": "billing-30.0.0.aar",
+          "size": 47168,
+          "sha512": "dedeec417b7b274e423e9cb933b3ce25085fd8b66139fd52416bcd2f37428f231e25c77f5740a4f52166d3cf6eb744930aa7546a296d8347133c096bcde875e9",
+          "sha256": "94d094a752a31b6e1bada760ca3714b0cf44cb85f44f6a722d5f43923cf942bc",
+          "sha1": "46a5c755576451cf22a84f9418f833f7bdd88d92",
+          "md5": "972c3a6b1e048ac7cd36ae168ef0eac1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "billing-30.0.0-sources.jar",
+          "url": "billing-30.0.0-sources.jar",
+          "size": 14936,
+          "sha512": "e9c8f60c1f3498ea8dbdaeb9cde9a9578333ab8a4f940284e8788ab0a95f6f21008d818503b5a4ce20af01c2884226c938488a1d95a5c5b527ad1f9bb08a582a",
+          "sha256": "66b664794ec1b06b7384fedd7e1eb6e3618142eef56bb3a744970357482f46da",
+          "sha1": "8c2ccbbb1fc0f60ad4d4afa79e4823f1f5ddaa1a",
+          "md5": "787f40a4ad3e32cfb940430dc87aa95a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "billing-30.0.0-javadoc.jar",
+          "url": "billing-30.0.0-javadoc.jar",
+          "size": 474526,
+          "sha512": "7cabf22ccc699990843a7432934c3dbf2cb1b2c0eea30aabcc0b1f29ccf522e2d782b34b638ac6faf329e08d931521d9a36f748b3624d33a148faf8d12ce8bcc",
+          "sha256": "fccdf0ad8a0fb3473fac08fd9b3834883745e11b1f2af67095ed7f5052e59656",
+          "sha1": "742c984983f42370a45b6cdb3b16c81dc8d44813",
+          "md5": "9ddfea1835f1e53fa85e927bfa6d12a9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.pyamsoft.pydroid",
+    "module": "billing-noop",
+    "version": "30.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "billing",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "billing-noop-30.0.0.aar",
+          "url": "billing-noop-30.0.0.aar",
+          "size": 3659,
+          "sha512": "5c77394212a1cb52dfe960e71a4fdf8b9d5ba5e8475dd9f2811feef7bc627c4c39e0cdc7775abd3671fe425b43052f8244121706401ffc561205d94d4c263cd9",
+          "sha256": "6211346ece3ab848ff7e9159843fe1fe720e387a0ba342d1356203e0a9606d75",
+          "sha1": "1ba084e0ca2cc8bcf5ed7b0d0a988180ddbbab0b",
+          "md5": "8bccf1d8a79ab45d2a4a329f7e615e76"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime-annotation",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "com.github.pyamsoft.pydroid",
+          "module": "billing",
+          "version": {
+            "requires": "30.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "billing-noop-30.0.0.aar",
+          "url": "billing-noop-30.0.0.aar",
+          "size": 3659,
+          "sha512": "5c77394212a1cb52dfe960e71a4fdf8b9d5ba5e8475dd9f2811feef7bc627c4c39e0cdc7775abd3671fe425b43052f8244121706401ffc561205d94d4c263cd9",
+          "sha256": "6211346ece3ab848ff7e9159843fe1fe720e387a0ba342d1356203e0a9606d75",
+          "sha1": "1ba084e0ca2cc8bcf5ed7b0d0a988180ddbbab0b",
+          "md5": "8bccf1d8a79ab45d2a4a329f7e615e76"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "billing-noop-30.0.0-sources.jar",
+          "url": "billing-noop-30.0.0-sources.jar",
+          "size": 2254,
+          "sha512": "05f3ae8403746c0dd6718325872739465d7403e2de9642e8089316ed943798279703ae77ce504bf08f5142d5ac4dc704b051054785f31ab9cfb771cfb2d171a7",
+          "sha256": "46fbbdad34838a05474189800fd6e3997d16934ee73de5e238b792cf0625dc99",
+          "sha1": "ce1019a9a9a695f07d9c7f1e010e69fb5670ff38",
+          "md5": "0116ae035a53b664bce141c31b57a6ff"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "billing-noop-30.0.0-javadoc.jar",
+          "url": "billing-noop-30.0.0-javadoc.jar",
+          "size": 406773,
+          "sha512": "4c148c496184853e90b84c6094a9acb8e4eb9e441129671428d8532207d0046681a8c2e255d8f58e3ac4419fe00d6853cbf014c37d84ec4cfb911041d53d4cf4",
+          "sha256": "0e616aa259e36c4378abaa426c4b149853930f0f2da4ecbc02e31f5658280043",
+          "sha1": "afec0c9ee08f7434f1ec8d3c7bc3e52c75c1e721",
+          "md5": "1b49661287987a50e59cf7d564880c3f"
+        }
+      ]
+    }
+  ]
+}
