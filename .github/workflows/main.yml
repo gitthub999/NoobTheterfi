@@ -21,8 +21,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build F-Droid Debug Offline
-        run: ./gradlew :app:assembleFdroidDebug --offline --stacktrace
+      - name: Build F-Droid Debug (pydroid from local-repo)
+        run: ./gradlew :app:assembleFdroidDebug --stacktrace
 
       - name: Upload APK to Artifacts
         uses: actions/upload-artifact@v4
