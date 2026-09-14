@@ -12,13 +12,12 @@ jobs:
 
       - name: Vendor pydroid to local-repo
         run: |
-          curl -L https://github.com/pyamsoft/pydroid/archive/refs/tags/30.0.0.zip -o p.zip
-          unzip p.zip
+          git clone --depth 1 --branch 30.0.0 https://github.com/pyamsoft/pydroid.git pydroid-30.0.0
           cd pydroid-30.0.0
           chmod +x gradlew
           ./gradlew publish -PpublishUrl=file://${{ github.workspace }}/local-repo --no-configuration-cache -Dorg.gradle.parallel=false
           cd ..
-          rm -rf pydroid-30.0.0 p.zip .gradle
+          rm -rf pydroid-30.0.0 .gradle
 
       - name: Commit ALL to make offline
         run: |
