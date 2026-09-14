@@ -7,7 +7,7 @@ import org.gradle.kotlin.dsl.withType
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at:
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,16 +18,25 @@ import org.gradle.kotlin.dsl.withType
 
 pluginManagement {
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
         gradlePluginPortal()
-        mavenLocal()
+        maven {
+            setUrl("https://jitpack.io")
+            content {
+                includeGroup("com.github.pyamsoft.cachify")
+                includeGroup("com.github.pyamsoft.pydroid")
+                includeGroup("com.github.pyamsoft")
+            }
+        }
     }
 }
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
         gradlePluginPortal()
